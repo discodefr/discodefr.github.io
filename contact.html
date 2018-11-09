@@ -67,6 +67,19 @@
           <textarea id="message" name="message" placeholder="Dis nous ce que tu as à nous dire." style="height:200px" required></textarea><br>
 
 		  <br><br><div id="captcha" class="g-recaptcha" data-sitekey="6LfKx3kUAAAAAMSkxx6QSX8fP9FILrFZNErhJrUT"></div><br>
+		
+		  <div id="ifnotcaptcha" style="color: red; font-size: 14px;"></div>
+		  <script>
+				var emt = document.getElementById("ifnotcaptcha")
+			  window.onload = function() {
+				var recaptcha = document.forms["myForm"]["g-recaptcha-response"];
+				recaptcha.required = true;
+				recaptcha.oninvalid = function(e) {
+				  // alerter
+				  emt.innerHTML("Merci de compléter ce champ.")
+				}
+			  }
+			  </script>
 
           <input type="submit" value="Envoyer">
         </form>

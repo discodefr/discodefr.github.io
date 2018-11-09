@@ -1,0 +1,22 @@
+/* Made by Dem0niaX*/
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+.dropdown-item:hover {
+	background-color: #769de8; 
+}
+
+.red-box {
+	border: 1px solid #CC0000;
+	color: white;
+	background: #e53935;
+}

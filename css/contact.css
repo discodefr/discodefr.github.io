@@ -76,6 +76,6 @@ input[type=submit]:hover {
 }
 
 .github {
-    background : white;
-    color: #14191e;
+    background : #14191e;
+    color: white;
 }

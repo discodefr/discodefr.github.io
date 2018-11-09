@@ -15,7 +15,7 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="css/contact.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script src='https://www.google.com/recaptcha/api.js' async defer></script>
 </head>
 
 <body>
@@ -58,7 +58,7 @@
           <input type="text" id="prenom" name="prenom" placeholder="Votre prénom (optionnel)" >
 
           <label for="discordtag" style="float: left;">Tag Discord</label>
-          <input type="text" id="discordtag" name="discordtag" placeholder="Votre tag Discord (Si vous possédez Discord) ex: Paulé#8182">
+          <input type="text" id="discordtag" name="discordtag" placeholder="Votre tag Discord (Si vous possédez Discord) ex: Paulé#8182" pattern="(.*)#(\d{4})" title="Tag Discord">
 
           <label for="email" style="float: left;">E-mail</label>
           <input type="email" id="email" name="email" placeholder="Votre e-mail, si vous souhaitez avoir une réponse">
@@ -67,19 +67,6 @@
           <textarea id="message" name="message" placeholder="Dis nous ce que tu as à nous dire." style="height:200px" required></textarea><br>
 
 		  <br><br><div id="captcha" class="g-recaptcha" data-sitekey="6LfKx3kUAAAAAMSkxx6QSX8fP9FILrFZNErhJrUT"></div><br>
-		
-		  <div id="ifnotcaptcha" style="color: red; font-size: 14px;"></div>
-		  <script>
-				var emt = document.getElementById("ifnotcaptcha")
-			  window.onload = function() {
-				var recaptcha = document.forms["myForm"]["g-recaptcha"];
-				recaptcha.required = true;
-				recaptcha.oninvalid = function(e) {
-				  // alerter
-				  emt.innerHTML("Merci de compléter ce champ.")
-				}
-			  }
-			  </script>
 
           <input type="submit" value="Envoyer">
         </form>

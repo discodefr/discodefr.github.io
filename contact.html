@@ -72,36 +72,28 @@
 		<p>Un problème ? Une suggestion ? Vous pouvez nous contacter juste ici !</p><br>
 		
 		<div class="container">
-			<form method="post" action="php/contact.php">
-			<legend style="font-size: 20px;">Informations Personnelles</legend>
-			<div class="md-form">
+				<form method="post" action="php/contact.php">
 				<label for="nom" style="float: left;">Nom</label>
-				<input type="text" id="nom" name="nom" class="form-control">
-			</div>
-			<div class="md-form">
+				<input type="text" id="nom" name="nom" placeholder="Votre nom (optionnel)">
+	
 				<label for="prenom" style="float: left;">Prénom</label>
-				<input type="text" id="prenom" name="prenom" class="form-control">
-			</div>
-			<div class="md-form">
+				<input type="text" id="prenom" name="prenom" placeholder="Votre prénom (optionnel)" >
+	
 				<label for="discordtag" style="float: left;">Tag Discord</label>
-				<input type="text" id="discordtag" name="discordtag" class="form-control" pattern="(.*)#(\d{4})">
-			</div>
-			<div class="md-form">
+				<input type="text" id="discordtag" name="discordtag" placeholder="Votre tag Discord (Si vous possédez Discord) ex: Paulé#8182" pattern="(.*)#(\d{4})" title="Tag Discord">
+	
 				<label for="email" style="float: left;">E-Mail</label>
-				<input type="email" id="email" class="form-control" name="email">
-			</div><br>
-			<legend style="font-size: 20px;">Votre Message</legend>
-			<div class="md-form">
+				<input type="email" id="email" name="email" placeholder="Votre e-mail, si vous souhaitez avoir une réponse">
+	
 				<label for="message" style="float: left;">Message</label>
-				<textarea id="message" name="message" class="form-control md-textarea" rows="2" required></textarea><br>
-			</div>
-
-			<div class="msg-error error" style="color: red;"></div>
-			<br><br><div id="recaptcha" class="g-recaptcha" data-sitekey="6LfKx3kUAAAAAMSkxx6QSX8fP9FILrFZNErhJrUT"></div><br>
-
-			<a class="btn btn-success" type="submit" value="Envoyer"><i class="fa fa-send"></i> Envoyer</a>
-			</form>
-		</div><br><br>
+				<textarea id="message" name="message" placeholder="Dis nous ce que tu as à nous dire !" style="height:200px" required></textarea><br>
+	
+				<div class="msg-error error" style="color: red;"></div>
+				<br><br><div id="recaptcha" class="g-recaptcha" data-sitekey="6LfKx3kUAAAAAMSkxx6QSX8fP9FILrFZNErhJrUT"></div><br>
+	
+				<input type="submit" value="Envoyer" id="btn-validate">
+				</form>
+			</div><br><br>
 		<!--End of real body-->
 	</body>
 

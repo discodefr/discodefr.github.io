@@ -2,13 +2,15 @@
 
 $('.fadeIn').addClass('animated fadeIn');
 
-/*$(document).ready(function(){
+$(document).ready(function(){
     (function() {
       function checkRecaptcha() {
         res = $('#g-recaptcha-response').val();
 
         if (res == "" || res == undefined || res.length == 0)
-          return false;
+          return false, 
+          $( '.msg-error').text( "Merci de remplir le reCAPTCHA.");
+
         else
           return true;
       }
@@ -20,20 +22,4 @@ $('.fadeIn').addClass('animated fadeIn');
         }
       });
     }());
-});*/
-
-$( '#btn-validate' ).click(function(){
-    var $captcha = $( '#recaptcha' ),
-        response = grecaptcha.getResponse();
-    
-    if (response.length === 0) {
-      $( '.msg-error').text( "reCAPTCHA is mandatory" );
-      if( !$captcha.hasClass( "error" ) ){
-        $captcha.addClass( "error" );
-      }
-    } else {
-      $( '.msg-error' ).text('');
-      $captcha.removeClass( "error" );
-      return false;
-    }
-  })
+});

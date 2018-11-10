@@ -8,9 +8,7 @@ $(document).ready(function(){
         res = $('#g-recaptcha-response').val();
 
         if (res == "" || res == undefined || res.length == 0)
-          return false, 
-          $( '.msg-error').text( "Merci de remplir le reCAPTCHA.");
-
+          return false;
         else
           return true;
       }

@@ -65,7 +65,7 @@
     <h1>Nous contacter :</h1><br>
     
     <div class="container">
-        <form method="post" action="/php/contact.php">
+        <form method="post" action="state=posted?php/contact.php">
           <label for="nom" style="float: left;">Nom</label>
           <input type="text" id="nom" name="nom" placeholder="Votre nom (optionnel)">
 
@@ -84,7 +84,7 @@
 		  <span class="msg-error error"></span>
 		  <br><br><div id="recaptcha" class="g-recaptcha" data-sitekey="6LfKx3kUAAAAAMSkxx6QSX8fP9FILrFZNErhJrUT"></div><br>
 
-          <input type="submit" value="Envoyer" id="btn-validate">
+          <button class="btn" id="btn-validate" value="Envoyer" type="submit">Envoyer</button>
         </form>
 	</div><br><br>
 	<!--End of real body-->

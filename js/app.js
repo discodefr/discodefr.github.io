@@ -16,7 +16,7 @@ $(document).ready(function(){
 
       $('form').submit(function(e) {
         if(!checkRecaptcha()) {
-          alert("Merci de remplir le reCAPTCHA.")
+            $( '.msg-error').text( "Merci de remplir le reCAPTCHA." );
           return false;
         }
       });

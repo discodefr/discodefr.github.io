@@ -85,3 +85,13 @@ input[type=submit]:hover {
     background: grey;
     color: grey;
 }
+
+msg-error {
+    color: #c65848;
+}
+
+.g-recaptcha.error {
+    border: solid 2px #c64848;
+    padding: .2em;
+    width: 19em;
+}

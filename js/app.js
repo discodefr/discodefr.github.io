@@ -2,7 +2,7 @@
 
 $('.fadeIn').addClass('animated fadeIn');
 
-$(document).ready(function(){
+/*$(document).ready(function(){
     (function() {
       function checkRecaptcha() {
         res = $('#g-recaptcha-response').val();
@@ -20,4 +20,20 @@ $(document).ready(function(){
         }
       });
     }());
-});
+});*/
+
+$( '#btn-validate' ).click(function(){
+    var $captcha = $( '#recaptcha' ),
+        response = grecaptcha.getResponse();
+    
+    if (response.length === 0) {
+      $( '.msg-error').text( "reCAPTCHA is mandatory" );
+      if( !$captcha.hasClass( "error" ) ){
+        $captcha.addClass( "error" );
+      }
+    } else {
+      $( '.msg-error' ).text('');
+      $captcha.removeClass( "error" );
+      return false;
+    }
+  })

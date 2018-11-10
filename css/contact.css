@@ -81,6 +81,6 @@ input[type=submit]:hover {
 }
 
 .mail {
-    background: #ffffff;
-    color: grey;
+    background: grey;
+    color: #ffffff;
 }

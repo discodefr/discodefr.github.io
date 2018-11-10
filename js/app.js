@@ -7,7 +7,7 @@ $(document).ready(function(){
       function checkRecaptcha() {
         res = $('#g-recaptcha-response').val();
 
-        if (res == "" || res == undefined || res.length == 0)
+        if (res == "" || res == undefined || res.length == 0) // Si l'user n'a pas coché
           return false;
         else
           return true;

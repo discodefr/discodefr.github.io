@@ -7,7 +7,7 @@ $(document).ready(function(){
       function checkRecaptcha() {
         res = $('#g-recaptcha-response').val();
 
-        if (res == "" || res == undefined || res.length == 0) // Si l'user n'a pas coché
+        if (res == "" || res == undefined || res.length == 0)
           return false;
         else
           return true;
@@ -16,7 +16,7 @@ $(document).ready(function(){
 
       $('form').submit(function(e) {
         if(!checkRecaptcha()) {
-            $( '.msg-error').text( "Merci de remplir le reCAPTCHA." );
+            $( '.msg-error').text( "Merci de remplir le reCAPTCHA." ); // si l'utilisateur n'a pas coché
           return false;
         }
       });

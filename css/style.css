@@ -20,3 +20,11 @@ a {
 	color: white;
 	background: #e53935;
 }
+
+.btn {
+	background-color: white;
+}
+
+.btn-secondary {
+	background-color: white;
+}

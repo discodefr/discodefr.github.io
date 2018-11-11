@@ -22,3 +22,10 @@ $(document).ready(function(){
       });
     }());
 });
+
+function redirectPaypal() {
+  let btn = document.getElementById("paypalbtn")
+  btn.onclick = window.location.href = "https://paypal.com" 
+}
+
+function

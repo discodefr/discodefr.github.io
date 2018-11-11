@@ -36,3 +36,20 @@ a {
 	background-color: white;
 	color: black;
 }
+
+.btn-secondary, .btn-secondary.focus, .btn-secondary.hover, .btn-secondary:focus, .btn-secondary:hover {
+    background-color: #23272a;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.mt-2, .my-2 {
+    margin-top: 8px !important;
+    margin-top: .5rem !important;
+}
+
+btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}

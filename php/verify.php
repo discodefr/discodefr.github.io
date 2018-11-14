@@ -16,8 +16,8 @@
         $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$apisecretKey."&response=".$captcha."&remoteip=".$ip);
 	$responseKeys = json_decode($response,true);
         if(intval($responseKeys["success"]) !== 1) {
-          echo '<h2>You are spammer ! Get the @$%K out</h2>';
+          echo '<span>Merci de réessayer</span>.';
         } else {
-          echo '<h2>Thanks for posting comment.</h2>';
+          echo '<h2>Merci d\'avoir complété le formulaire.</h2>';
         }
 ?>

@@ -20,3 +20,22 @@ a {
 	color: white;
 	background: #e53935;
 }
+
+.box, .box-2 {
+    text-align: center;
+}
+
+.black-box {
+    color: white;
+    background: black;
+}
+
+.box-2, .black-box {
+    border: 1px solid black;
+    margin-left: 800px;
+    margin-right: 800px;
+}
+
+.hr-black {
+    border-top: 1px solid black;
+}

@@ -63,44 +63,37 @@
 		<p>Un problème ? Une suggestion ? Vous pouvez nous contacter juste ici !</p><br>
 
 			<div class="container">
-				<div class="form-container">
-					<form method="post" id="reused_form">
-					<legend style="font-size: 20px;">Informations Personnelles</legend>
-					<div class="md-form">
-						<label for="nom" style="float: left;">Nom</label>
-						<input type="text" id="nom" name="Surname" class="form-control">
-					</div>
-					<div class="md-form">
-						<label for="prenom" style="float: left;">Prénom</label>
-						<input type="text" id="prenom" name="Name" class="form-control">
-					</div>
-					<div class="md-form">
-						<label for="discordtag" style="float: left;">Tag Discord</label>
-						<input type="text" id="discordtag" name="Discordtag" class="form-control" pattern="(.*)#(\d{4})">
-					</div>
-					<div class="md-form">
-						<label for="email" style="float: left;">E-Mail</label>
-						<input type="email" id="email" class="form-control" name="Email" required>
-					</div><br>
-					<legend style="font-size: 20px;">Votre Message</legend>
-					<div class="md-form">
-						<label for="message" style="float: left;">Message</label>
-						<textarea id="message" name="Message" class="form-control md-textarea" rows="5" required></textarea><br>
-					</div>
-		
-					<div class="msg-error error" style="color: #fc3333;"></div>
-					<br><br><div id="recaptcha" class="g-recaptcha" data-sitekey="6LfKx3kUAAAAAMSkxx6QSX8fP9FILrFZNErhJrUT"></div><br>
-		
-					<button type="submit" class="btn btn-success"><i class="fa fa-send"></i> Envoyer</button>
-					</form>
+
+				<form method="post" action="php/contact.php">
+				<legend style="font-size: 20px;">Informations Personnelles</legend>
+				<div class="md-form">
+					<label for="nom" style="float: left;">Nom</label>
+					<input type="text" id="nom" name="nom" class="form-control">
 				</div>
+				<div class="md-form">
+					<label for="prenom" style="float: left;">Prénom</label>
+					<input type="text" id="prenom" name="prenom" class="form-control">
+				</div>
+				<div class="md-form">
+					<label for="discordtag" style="float: left;">Tag Discord</label>
+					<input type="text" id="discordtag" name="discordtag" class="form-control" pattern="(.*)#(\d{4})">
+				</div>
+				<div class="md-form">
+					<label for="email" style="float: left;">E-Mail</label>
+					<input type="email" id="email" class="form-control" name="email" required>
+				</div><br>
+				<legend style="font-size: 20px;">Votre Message</legend>
+				<div class="md-form">
+					<label for="message" style="float: left;">Message</label>
+					<textarea id="message" name="message" class="form-control md-textarea" rows="5" required></textarea><br>
+				</div>
+	
+				<div class="msg-error error" style="color: #fc3333;"></div>
+				<br><br><div id="recaptcha" class="g-recaptcha" data-sitekey="6LfKx3kUAAAAAMSkxx6QSX8fP9FILrFZNErhJrUT"></div><br>
+	
+				<button type="submit" class="btn btn-success"><i class="fa fa-send"></i> Envoyer</button>
+				</form>
 			</div><br><br>
-			<div id="success_message" style="display:none">
-                <h3>Merci d'avoir rempli le formulaire !</h3> 
-                <p> Nous vous recontacterons bientôt.</p>
-            </div>
-			<div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Erreur</h3> Sésolé, il y a eu une erreur lors de l'envoi de votre formulaire... </div><br><br>
-				
 			<p>Vous pouvez aussi nous contacter par mail à <a href="mailto:discodefr.contact@gmail.com">discodefr.contact@gmail.com</a> ou par Twitter en nous mentionnant : @DisCodeFr !</p>
 
 	<footer class="page-footer font-small primary-color">

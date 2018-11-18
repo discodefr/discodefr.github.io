@@ -15,8 +15,8 @@ a {
 	background-color: #769de8; 
 }
 
-.red-box {
-	border: 1px solid #CC0000;
+.blue-box {
+	border: 1px solid #0099CC;
 	color: white;
-	background: #e53935;
+	background: #0099CC;
 }

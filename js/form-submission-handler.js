@@ -19,8 +19,8 @@
   
         $('form').submit(function(e) {
           if(!checkRecaptcha()) {
-            disableAllButtons(form)
               $( '.msg-error').text( "Merci de cocher le reCAPTCHA." )
+              disableAllButtons(form)
             return false;
           }
         });

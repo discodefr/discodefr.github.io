@@ -23,6 +23,9 @@
               disableAllButtons(form)
             return false;
           }
+          else {
+            enableAllButtons(form) = false;
+          }
         });
       }());
   });
@@ -133,6 +136,13 @@
     var buttons = form.querySelectorAll("button");
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].disabled = true;
+    }
+  }
+
+  function enableAllButtons(form) {
+    var buttons = form.querySelectorAll("button");
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].disabled = false;
     }
   }
 })();

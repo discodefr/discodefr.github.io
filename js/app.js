@@ -2,6 +2,13 @@
 
 $('.fadeIn').addClass('animated fadeIn');
 
+function disableAllButtons(form) {
+  var buttons = form.querySelectorAll("button");
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].disabled = true;
+  }
+}
+
 $(document).ready(function(){
     (function() {
       function checkRecaptcha() {
@@ -16,7 +23,8 @@ $(document).ready(function(){
 
       $('form').submit(function(e) {
         if(!checkRecaptcha()) {
-            $( '.msg-error').text( "Merci de cocher le reCAPTCHA." ); // si l'utilisateur n'a pas coché
+            $( '.msg-error').text( "Merci de cocher le reCAPTCHA." )
+            disableAllButtons(form)
           return false;
         }
       });

@@ -4,13 +4,28 @@
     return re.test(email);
   }
 
-  function validateHuman(honeypot) {
-    if (honeypot) {  //if hidden form filled up
-      console.log("Robot Detected!");
-      return true;
-    } else {
-      console.log("Welcome Human!");
-    }
+  function validateHuman() {
+    $(document).ready(function(){
+      (function() {
+        function checkRecaptcha() {
+          res = $('#g-recaptcha-response').val();
+  
+          if (res == "" || res == undefined || res.length == 0)
+            return false;
+          else
+            return true;
+        }
+  
+  
+        $('form').submit(function(e) {
+          if(!checkRecaptcha()) {
+            disableAllButtons(form)
+              $( '.msg-error').text( "Merci de cocher le reCAPTCHA." )
+            return false;
+          }
+        });
+      }());
+  });
   }
 
   // get all data in form and return object
@@ -64,11 +79,11 @@
     var form = event.target;
     var data = getFormData(form);         // get the values submitted in the form
 
-    /* OPTION: Remove this comment to enable SPAM prevention, see README.md
-    if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
+    // OPTION: Remove this comment to enable SPAM prevention, see README.md
+
+    if (validateHuman()) {  //if form is filled, form will not be submitted
       return false;
     }
-    */
 
     if( data.email && !validEmail(data.email) ) {   // if email is not valid show error
       var invalidEmail = form.querySelector(".email-invalid");

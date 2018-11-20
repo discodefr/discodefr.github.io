@@ -20,3 +20,40 @@ a {
 	color: white;
 	background: #0099CC;
 }
+
+.invite-btn {
+	height: 40px;
+	min-width: 90px;
+	padding-left: 10px;
+	padding-right: 10px;
+	cursor: pointer;
+	color: #ffffff;
+	align-self: center;
+	margin-left: 10px;
+	line-height: 20px;
+	width: auto;
+	-webkit-transition: background-color .17s ease,color .17s ease;
+	transition: background-color .17s ease,color .17s ease;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	-webkit-user-select: none;
+	align-items: center;
+	background: none;
+	font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+	border: none;
+	border-radius: 3px;
+	box-sizing: border-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 14px;
+	font-weight: 500;
+	justify-content: center;
+	line-height: 16px;
+	padding: 2px 16px;
+	background-color: #43b581;
+}
+
+.invite-btn:hover {
+	background-color: #3ca374;
+}

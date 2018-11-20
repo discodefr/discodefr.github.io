@@ -4,33 +4,6 @@
     return re.test(email);
   }
 
-  function validateHuman() {
-    $(document).ready(function(){
-      (function() {
-        function checkRecaptcha() {
-          res = $('#g-recaptcha-response').val();
-  
-          if (res == "" || res == undefined || res.length == 0)
-            return false;
-          else
-            return true;
-        }
-  
-  
-        $('form').submit(function(e) {
-          if(!checkRecaptcha()) {
-              $( '.msg-error').text( "Merci de cocher le reCAPTCHA." )
-              disableAllButtons(form)
-            return false;
-          }
-          else {
-            enableAllButtons(form) = false;
-          }
-        });
-      }());
-  });
-  }
-
   // get all data in form and return object
   function getFormData(form) {
     var elements = form.elements;
@@ -136,13 +109,6 @@
     var buttons = form.querySelectorAll("button");
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].disabled = true;
-    }
-  }
-
-  function enableAllButtons(form) {
-    var buttons = form.querySelectorAll("button");
-    for (var i = 0; i < buttons.length; i++) {
-      buttons[i].disabled = false;
     }
   }
 })();

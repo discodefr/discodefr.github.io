@@ -21,11 +21,14 @@ a {
 	background: #0099CC;
 }
 
-msg-error {
-	color: #c65848;
-  }
-  .g-recaptcha.error {
-	border: solid 2px #c64848;
-	padding: .2em;
-	width: 19em;
-  }
+input[disabled]#sell_house_submit,
+input[disabled]#sell_house_submit:hover,
+input[disabled]#sell_house_submit:active,
+input[disabled]#sell_house_submit:focus { 
+
+	background: #CCCCCC;
+	box-shadow: none;
+	outline: none;
+	opacity: 0.5;
+	text-decoration: none;
+}

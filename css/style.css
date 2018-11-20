@@ -67,3 +67,7 @@ a {
 	padding: .2em;
 	width: 19em;
 }
+
+.mr-3:hover {
+	color: rgba(255,255,255,.75);
+}

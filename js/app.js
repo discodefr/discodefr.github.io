@@ -2,23 +2,18 @@
 
 $('.fadeIn').addClass('animated fadeIn');
 
-$(document).ready(function(){
-    (function() {
-      function checkRecaptcha() {
-        res = $('#g-recaptcha-response').val();
-
-        if (res == "" || res == undefined || res.length == 0)
-          return false;
-        else
-          return true;
+$( '#btn-validate' ).click(function(){
+    var $captcha = $( '#recaptcha' ),
+        response = grecaptcha.getResponse();
+    
+    if (response.length === 0) {
+      $( '.msg-error').text( "reCAPTCHA is mandatory" );
+      if( !$captcha.hasClass( "error" ) ){
+        $captcha.addClass( "error" );
       }
-
-
-      $('form').submit(function(e) {
-        if(!checkRecaptcha()) {
-            $( '.msg-error').text( "Merci de cocher le reCAPTCHA." ); // si l'utilisateur n'a pas coché
-          return false;
-        }
-      });
-    }());
-});
+    } else {
+      $( '.msg-error' ).text('');
+      $captcha.removeClass( "error" );
+      alert( 'reCAPTCHA marked' );
+    }
+  })

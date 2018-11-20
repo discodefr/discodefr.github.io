@@ -21,7 +21,6 @@ a {
 	background: #0099CC;
 }
 
-<<<<<<< HEAD
 .invite-btn {
 	height: 40px;
 	min-width: 90px;
@@ -58,13 +57,13 @@ a {
 .invite-btn:hover {
 	background-color: #3ca374;
 }
-=======
-msg-error {
+
+.msg-error {
 	color: #c65848;
   }
-  .g-recaptcha.error {
+
+.g-recaptcha.error {
 	border: solid 2px #c64848;
 	padding: .2em;
 	width: 19em;
-  }
->>>>>>> 2452676a99c94354fa85d1347bd0b6bd75243352
+}

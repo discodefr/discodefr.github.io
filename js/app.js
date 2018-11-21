@@ -8,5 +8,5 @@ function recaptcha_callback() {
 
 function contactredirect() {
 var submitbtn = document.getElementById("submitbtn")
-submitbtn.onclick = window.location.href("contactposted.html")
+submitbtn.onclick = window.location.href("https://discodefr.github.io/contactposted.html")
 }

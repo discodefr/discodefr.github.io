@@ -6,7 +6,8 @@
 	<head>
   	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="author" content="Paulé, Dem0niax and Enevevet">
   	<title>DisCode® - Nous contacter</title>
   	<link rel="icon" href="https://lc.cx/discodelogo" type="image/x-icon">
 
@@ -17,7 +18,7 @@
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
   	<script src='https://www.google.com/recaptcha/api.js' async defer></script>
 	</head>
 
@@ -68,38 +69,43 @@
 
 				<form class="gform" method="POST" data-email="discodefr.contact@gmail.com" action="https://script.google.com/macros/s/AKfycbzUMQdcrJYc-jCLvKKd1h0fS4GOBa3iNtsP9ii3HOyxwA6oR8E/exec">
 
-				<legend style="font-size: 20px;">Informations Personnelles</legend>
+					<legend style="font-size: 20px;">Informations Personnelles</legend>
 
-				<div class="md-form">
-					<label for="nom" style="float: left;">Nom</label>
-					<input type="text" id="nom" name="nom" class="form-control">
-				</div>
-				<div class="md-form">
-					<label for="prenom" style="float: left;">Prénom</label>
-					<input type="text" id="prenom" name="prenom" class="form-control">
-				</div>
-				<div class="md-form">
-					<label for="discordtag" style="float: left;">Tag Discord</label>
-					<input type="text" id="discordtag" name="discordtag" class="form-control" pattern="(.*)#(\d{4})">
-				</div>
-				<div class="md-form">
-					<label for="email" style="float: left;">E-Mail</label>
-					<input type="email" id="email" class="form-control" name="email" required>
-				</div><br>
-				<legend style="font-size: 20px;">Votre Message</legend>
-				<div class="md-form">
-					<label for="message" style="float: left;">Message</label>
-					<textarea id="message" name="message" class="form-control md-textarea" rows="5" required></textarea><br>
-				</div>
+					<div class="md-form">
+						<label for="nom" style="float: left;">Nom</label>
+						<input type="text" id="nom" name="nom" class="form-control">
+					</div>
+					<div class="md-form">
+						<label for="prenom" style="float: left;">Prénom</label>
+						<input type="text" id="prenom" name="prenom" class="form-control">
+					</div>
+					<div class="md-form">
+						<label for="discordtag" style="float: left;">Tag Discord</label>
+						<input type="text" id="discordtag" name="discordtag" class="form-control" pattern="(.*)#(\d{4})">
+					</div>
+					<div class="md-form">
+						<label for="email" style="float: left;">E-Mail</label>
+						<input type="email" id="email" class="form-control" name="email" required>
+					</div><br>
+					<legend style="font-size: 20px;">Votre Message</legend>
+					<div class="md-form">
+						<label for="message" style="float: left;">Message</label>
+						<textarea id="message" name="message" class="form-control md-textarea" rows="5" required></textarea><br>
+					</div>
 
-				<br><br><div id="recaptcha" class="g-recaptcha" data-sitekey="6LfKx3kUAAAAAMSkxx6QSX8fP9FILrFZNErhJrUT" data-callback="recaptcha_callback"></div><br>
-	
-				<button type="submit" class="btn btn-success" disabled="disabled" id="sell_house_submit"><i class="fa fa-send"></i> Envoyer</button>
+					<br><br><div id="recaptcha" class="g-recaptcha" data-sitekey="6LfKx3kUAAAAAMSkxx6QSX8fP9FILrFZNErhJrUT" data-callback="recaptcha_callback"></div><br>
+		
+					<button type="submit" class="btn btn-success" disabled="disabled" id="sell_house_submit"><i class="fa fa-send"></i> Envoyer</button>
+					<div class="thankyou_message" style="display:none;">
+						<h2><em>Merci</em> de nous avoir contacté !
+						Vous recevrez une réponse bientôt.</h2>
+					</div>
+
 				</form>
 
 			</div><br><br>
 			<p>Vous pouvez aussi nous contacter par mail à <a href="mailto:discodefr.contact@gmail.com">discodefr.contact@gmail.com</a> ou par Twitter en nous mentionnant : <a href="https://twitter.com/intent/tweet?screen_name=DisCodeFr&ref_src=twsrc%5Etfw" target="_blank">@DisCodeFr</a> !</p>
-			<script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+			<script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
 		</body>
 	<footer class="page-footer font-small primary-color">
 		<br>

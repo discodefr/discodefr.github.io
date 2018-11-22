@@ -67,7 +67,7 @@
 
 			<div class="container">
 
-				<form id="ctcform" class="gform" method="POST" data-email="discodefr.contact@gmail.com" action="https://script.google.com/macros/s/AKfycbzUMQdcrJYc-jCLvKKd1h0fS4GOBa3iNtsP9ii3HOyxwA6oR8E/exec">
+				<form class="gform" method="POST" data-email="discodefr.contact@gmail.com" action="https://script.google.com/macros/s/AKfycbzUMQdcrJYc-jCLvKKd1h0fS4GOBa3iNtsP9ii3HOyxwA6oR8E/exec">
 
 					<legend style="font-size: 20px;">Informations Personnelles</legend>
 
@@ -91,10 +91,11 @@
 					<div class="md-form">
 						<label for="message" style="float: left;">Message</label>
 						<textarea id="message" name="message" class="form-control md-textarea" rows="5" required></textarea><br>
+					</div>
 
 					<br><br><div id="recaptcha" class="g-recaptcha" data-sitekey="6LfKx3kUAAAAAMSkxx6QSX8fP9FILrFZNErhJrUT" data-callback="recaptcha_callback"></div><br>
 		
-					<button type="submit" class="btn btn-success" disabled="disabled" id="submitbtn"><i class="fa fa-send"></i> Envoyer</button>
+					<button type="submit" class="btn btn-success" disabled="disabled" id="submitbtn" onclick="contactredirect()"><i class="fa fa-send"></i> Envoyer</button>
 
 				</form>
 

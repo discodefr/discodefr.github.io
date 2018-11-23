@@ -4,15 +4,6 @@
       return re.test(email);
     }
   
-    function validateHuman(honeypot) {
-      if (honeypot) {  //if hidden form filled up
-        console.log("Robot Detected!");
-        return true;
-      } else {
-        console.log("Welcome Human!");
-      }
-    }
-  
     // get all data in form and return object
     function getFormData(form) {
       var elements = form.elements;

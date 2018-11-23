@@ -7,7 +7,7 @@ function recaptcha_callback() {
 }
 
 // AJAX
-$( "#fillthesheet" ).submit(function( event ) {
+$( "#ctcform" ).submit(function( event ) {
   event.preventDefault();
 
   var showConfirmation = function (data){

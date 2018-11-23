@@ -82,8 +82,12 @@
               formElements.style.display = "none"; // hide form
             }
             var thankYouMessage = form.querySelector(".thankyou_message");
+            var form = form.querySelector(".gform")
             if (thankYouMessage) {
               thankYouMessage.style.display = "block";
+            }
+            if(form) {
+              form.style.display = "none";
             }
             return;
         };

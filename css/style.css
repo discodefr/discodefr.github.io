@@ -19,9 +19,9 @@ a {
 }
 
 .blue-box {
-	border: 1px solid #0099CC;
+	border: 1px solid rgb(10, 148, 194);
 	color: white;
-	background: #0099CC;
+	background: rgb(18, 167, 216);
 }
 
 .invite-btn {

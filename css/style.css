@@ -1,11 +1,14 @@
 /* Made by Dem0niaX*/
 
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 html {
 	scroll-behavior: smooth;
 }
 
 body {
 	text-align: center;
+	font-family: 'Roboto', sans-serif;
 }
 
 a {

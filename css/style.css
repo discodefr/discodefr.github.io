@@ -87,7 +87,7 @@ input[disabled]#sell_house_submit:focus {
 }
 
 .homenews {
-	background-color: #707274;
-	border: 2px solid #494949;
+	background-color: #999999;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	color: white;
 }

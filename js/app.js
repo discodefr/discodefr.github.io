@@ -17,8 +17,8 @@ function readMore()
         document.getElementById("readMoreBtn").innerText = "Moins...";
         status = "more";
     } else if (status == "more") {
-        document.getElementById("more").innerHTML = "";
-        document.getElementById("toggleButton").innerText = "Plus...";
+        document.getElementById("more").display = "none";
+        document.getElementById("readMoreBtn").innerText = "Plus...";
         status = "less"
     }
 }

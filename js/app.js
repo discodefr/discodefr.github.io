@@ -6,16 +6,19 @@ function recaptcha_callback() {
   $('#submitbtn').removeAttr('disabled');
 }
 
-function readMore() {
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("readMoreBtn");
+var status = "less";
 
-  if (!moreText.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more"; 
-    moreText.style.display = "none";
-  } else {
-    btnText.innerHTML = "Moins..."; 
-    moreText.style.display = "inline";
-  }
+function readMore()
+{
+    var text="Here is some text that I want added to the HTML file";
+
+    if (status == "less") {
+        document.getElementById("more").innerHTML=text;
+        document.getElementById("readMoreBtn").innerText = "Moins...";
+        status = "more";
+    } else if (status == "more") {
+        document.getElementById("more").innerHTML = "";
+        document.getElementById("toggleButton").innerText = "Plus...";
+        status = "less"
+    }
 }

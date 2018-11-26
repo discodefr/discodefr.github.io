@@ -10,10 +10,9 @@ var status = "less";
 
 function readMore()
 {
-    var text="Here is some text that I want added to the HTML file";
 
     if (status == "less") {
-        document.getElementById("more").innerHTML=text;
+        document.getElementById("more").display = "inline";
         document.getElementById("readMoreBtn").innerText = "Moins...";
         status = "more";
     } else if (status == "more") {

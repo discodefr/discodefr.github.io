@@ -112,14 +112,6 @@ input[disabled]#submitbtn:focus {
     color: #33739E;
 }
 
-.tweets {
-    display:none;
-    padding: 10px;
-    border-width: 0 1px 1px 0;
-    margin-bottom: 5px;
-    background-color: #f1f1f1;
-}
-
 #loadMore {
     padding: 10px;
     text-align: center;

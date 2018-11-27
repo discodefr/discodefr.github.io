@@ -6,18 +6,18 @@ function recaptcha_callback() {
   $('#submitbtn').removeAttr('disabled');
 }
 
-var status = "less";
 
-function readMore()
-{
+var h = $('homenews')[0].scrollHeight;
 
-    if (status == "less") {
-        document.getElementById("more").display = "inline";
-        document.getElementById("readMoreBtn").innerText = "Moins...";
-        status = "more";
-    } else if (status == "more") {
-        document.getElementById("more").display = "none";
-        document.getElementById("readMoreBtn").innerText = "Plus...";
-        status = "less"
-    }
-}
+$('#more').click(function(e) {
+    e.stopPropagation();
+    $('homenews').animate({
+        'height': h
+    })
+});
+
+$(document).click(function() {
+    $('homenews').animate({
+        'height': '50px'
+    })
+})

@@ -6,18 +6,13 @@ function recaptcha_callback() {
   $('#submitbtn').removeAttr('disabled');
 }
 
+$(function(){ /* to make sure the script runs after page load */
 
-var h = $('homenews')[0].scrollHeight;
+    $('a.read_more').click(function(event){ /* find all a.read_more elements and bind the following code to them */
 
-$('#more').click(function(e) {
-    e.stopPropagation();
-    $('homenews').animate({
-        'height': h
-    })
+        event.preventDefault(); /* prevent the a from changing the url */
+        $(this).parents('.item').find('.more_text').show(); /* show the .more_text span */
+
+    });
+
 });
-
-$(document).click(function() {
-    $('homenews').animate({
-        'height': '50px'
-    })
-})

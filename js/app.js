@@ -6,8 +6,11 @@ function recaptcha_callback() {
   $('#submitbtn').removeAttr('disabled');
 }
 
-$(function () {
+function bodyLoad() {
     $("div").slice(0, 3).show();
+}
+
+$(function () {
     $("#loadMore").on('click', function (e) {
         e.preventDefault();
         $("div:hidden").slice(0, 3).slideDown();

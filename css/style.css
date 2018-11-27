@@ -98,7 +98,7 @@ input[disabled]#submitbtn:focus {
   	background-color: #f1f1f1;
 }
 
-.invite-btn {
+#loadMore {
 	height: 40px;
 	min-width: 90px;
 	padding-left: 10px;
@@ -131,6 +131,6 @@ input[disabled]#submitbtn:focus {
 	background-color: #4377b3;
 }
 
-#loadmore:hover {
+#loadMore:hover {
 	background-color: #81b0e6;
 }

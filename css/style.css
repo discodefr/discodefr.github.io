@@ -95,10 +95,14 @@ input[disabled]#submitbtn:focus {
 .tweets div{
 	display:none;
   	padding: 10px;
-  	background-color: #f1f1f1;
+  	background-color: #e1e1e1;
 }
 
-#loadMore {
+.loadmorebtn {
+	background-color: #e1e1e1
+}
+
+.loadmorebtn #loadMore {
 	height: 40px;
 	width: 175px;
 	text-align: center;

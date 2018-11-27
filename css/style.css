@@ -100,15 +100,13 @@ input[disabled]#submitbtn:focus {
 
 #loadMore {
 	height: 40px;
-	min-width: 90px;
-	padding-left: 10px;
-	padding-right: 10px;
+	width: 175px;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
 	cursor: pointer;
 	color: #ffffff;
 	align-self: center;
-	margin-left: 10px;
-	line-height: 20px;
-	width: auto;
 	-webkit-transition: background-color .17s ease,color .17s ease;
 	transition: background-color .17s ease,color .17s ease;
 	-webkit-box-align: center;

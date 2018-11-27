@@ -98,11 +98,7 @@ input[disabled]#submitbtn:focus {
   	background-color: #e1e1e1;
 }
 
-.loadmorebtn {
-	background-color: #e1e1e1
-}
-
-.loadmorebtn #loadMore {
+#loadMore {
 	height: 40px;
 	width: 175px;
 	text-align: center;

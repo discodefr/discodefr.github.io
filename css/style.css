@@ -98,21 +98,39 @@ input[disabled]#submitbtn:focus {
   	background-color: #f1f1f1;
 }
 
-#loadMore {
-	padding: 10px;
-	text-align: center;
-	background-color: #33739E;
-	color: #fff;
-	border-width: 0 1px 1px 0;
-	border-style: solid;
-	border-color: #fff;
-	box-shadow: 0 1px 1px #ccc;
-	transition: all 600ms ease-in-out;
-	-webkit-transition: all 600ms ease-in-out;
-	-moz-transition: all 600ms ease-in-out;
-	-o-transition: all 600ms ease-in-out;
+.invite-btn {
+	height: 40px;
+	min-width: 90px;
+	padding-left: 10px;
+	padding-right: 10px;
+	cursor: pointer;
+	color: #ffffff;
+	align-self: center;
+	margin-left: 10px;
+	line-height: 20px;
+	width: auto;
+	-webkit-transition: background-color .17s ease,color .17s ease;
+	transition: background-color .17s ease,color .17s ease;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	-webkit-user-select: none;
+	align-items: center;
+	background: none;
+	font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+	border: none;
+	border-radius: 3px;
+	box-sizing: border-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 14px;
+	font-weight: 500;
+	justify-content: center;
+	line-height: 16px;
+	padding: 2px 16px;
+	background-color: #4377b3;
 }
-#loadMore:hover {
-	background-color: #fff;
-	color: #33739E;
+
+#loadmore:hover {
+	background-color: #81b0e6;
 }

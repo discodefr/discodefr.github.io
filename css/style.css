@@ -132,3 +132,11 @@ input[disabled]#submitbtn:focus {
 #loadMore:hover {
 	background-color: #81b0e6;
 }
+
+#navbarDropdown {
+	display: none;
+}
+
+#navbarDropdown:hover {
+	display: block;
+}

@@ -57,7 +57,7 @@
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"href="#">Notre bot <i class="fa fa-sort-down" aria-hidden="true"></i></a>
-					<div class="dropdown-menu dropdown-black" aria-labelledby="navbarDropdown">	
+					<div class="dropdown-menu dropdown-black" aria-labelledby="navbarDropdown" id="navbarOptions">	
         				<a class="dropdown-item" href="/bot/presentation.html">Présentation</a>
         				<a class="dropdown-item" href="/bot/commands.html">Commandes</a>
         				<a class="dropdown-item" href="/bot/invite.html">Inviter le bot</a>
@@ -126,7 +126,11 @@
 		</div>
 		<!--End of real body-->
 		
-    </body>
+	</body>
+	<script type="text/javascript">
+		var optns = document.getElementById("navbarDropdown");
+		optns.onmouseover(optns.style = "display: block;");
+	</script>
 
 	<!--Footer-->
 	<footer class="page-footer font-small primary-color">

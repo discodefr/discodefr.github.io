@@ -133,10 +133,6 @@ input[disabled]#submitbtn:focus {
 	background-color: #81b0e6;
 }
 
-#navbarDropdown {
+#navbarOptions {
 	display: none;
-}
-
-#navbarDropdown:hover {
-	display: block;
 }

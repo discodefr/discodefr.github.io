@@ -128,11 +128,3 @@ input[disabled]#submitbtn:focus {
 	padding: 2px 16px;
 	background-color: #4377b3;
 }
-
-#loadMore:hover {
-	background-color: #81b0e6;
-}
-
-#navbarOptions {
-	display: none;
-}

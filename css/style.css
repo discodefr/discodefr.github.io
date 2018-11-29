@@ -24,10 +24,6 @@ a {
 	background: rgb(18, 167, 216);
 }
 
-#navbarOptions {
-	display: -moz-popup !important;
-}
-
 .invite-btn {
 	height: 40px;
 	min-width: 90px;

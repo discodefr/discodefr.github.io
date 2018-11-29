@@ -25,7 +25,7 @@ a {
 }
 
 #navbarOptions {
-	display: -moz-popup;
+	display: -moz-popup !important;
 }
 
 .invite-btn {

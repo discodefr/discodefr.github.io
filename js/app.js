@@ -6,10 +6,6 @@ function recaptcha_callback() {
   $('#submitbtn').removeAttr('disabled');
 }
 
-function bodyLoad() {
-    $("div").slice(0, 3).show();
-}
-
 $(function () {
     $("div").slice(0, 3).show();
     $("#loadMore").on('click', function (e) {
@@ -20,6 +16,6 @@ $(function () {
         }
         $('html,body').animate({
             scrollTop: $(this).offset().top
-        }, 2000);
+        }, 4000);
     });
 });

@@ -75,17 +75,6 @@ a {
 	color: rgba(255,255,255,.75);
 }
 
-input[disabled]#submitbtn,
-input[disabled]#submitbtn:hover,
-input[disabled]#submitbtn:active,
-input[disabled]#submitbtn:focus {
-	background: #CCCCCC;
-	box-shadow: none;
-	outline: none;
-	opacity: 0.5;
-	text-decoration: none;
-}
-
 .homenews {
 	background-color: #e1e1e1;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

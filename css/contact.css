@@ -38,3 +38,14 @@ input[type=submit]:hover {
     background-color: #f1f1f1;
     padding: 20px;
 }
+
+input[disabled]#submitbtn,
+input[disabled]#submitbtn:hover,
+input[disabled]#submitbtn:active,
+input[disabled]#submitbtn:focus {
+	background: #CCCCCC;
+	box-shadow: none;
+	outline: none;
+	opacity: 0.5;
+	text-decoration: none;
+}

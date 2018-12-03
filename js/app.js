@@ -6,7 +6,7 @@ function recaptcha_callback() {
   $('#submitbtn').removeAttr('disabled');
 }
 
-var t = document.getElementById('t')
+var t = document.getElementsByClassName('t')
 $(function () {
     $(t).slice(0, 3).show();
     $("#loadMore").on('click', function (e) {

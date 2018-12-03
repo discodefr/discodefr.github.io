@@ -7,11 +7,11 @@ function recaptcha_callback() {
 }
 
 $(function () {
-    $("t").slice(0, 3).show();
+    $("#t").slice(0, 3).show();
     $("#loadMore").on('click', function (e) {
         e.preventDefault();
-        $("t:hidden").slice(0, 3).slideDown();
-        if ($("t:hidden").length == 0) {
+        $("#t:hidden").slice(0, 3).slideDown();
+        if ($("#t:hidden").length == 0) {
             $("#load").fadeOut('slow');
         }
         $('html,body').animate({

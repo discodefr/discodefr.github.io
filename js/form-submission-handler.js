@@ -79,14 +79,12 @@
       xhr.onreadystatechange = function() {
           console.log(xhr.status, xhr.statusText);
           console.log(xhr.responseText);
+
           var formElements = form.querySelector(".form-elements")
-          if (formElements) {
             formElements.style.display = "none"; // hide form
-          }
+            
           var thankYouMessage = form.querySelector(".thankyou_message");
-          if (thankYouMessage) {
-            thankYouMessage.style.display = "block";
-          }
+          thankYouMessage.style.display = "block";
           return;
       };
       // url encode form data for sending as post data

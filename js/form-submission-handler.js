@@ -1,17 +1,17 @@
-(function() {
-  function validEmail(email) {
-    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-    return re.test(email);
-  }
+//(function() {
+//  function validEmail(email) {
+//    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+//    return re.test(email);
+//  }
 
-  function validateHuman(honeypot) {
+  /*function validateHuman(honeypot) {
     if (honeypot) {  //if hidden form filled up
       console.log("Robot Detected!");
       return true;
     } else {
       console.log("Welcome Human!");
     }
-  }
+  }*/
 
   // get all data in form and return object
   function getFormData(form) {
@@ -70,13 +70,6 @@
     }
     */
 
-    if( data.email && !validEmail(data.email) ) {   // if email is not valid show error
-      var invalidEmail = form.querySelector(".email-invalid");
-      if (invalidEmail) {
-        invalidEmail.style.display = "block";
-        return false;
-      }
-    } else {
       disableAllButtons(form);
       var url = form.action;
       var xhr = new XMLHttpRequest();
@@ -101,7 +94,6 @@
           return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
       }).join('&');
       xhr.send(encoded);
-    }
   }
   
   function loaded() {

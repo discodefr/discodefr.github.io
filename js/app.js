@@ -22,15 +22,3 @@ $(function () {
         }, 4000);
     });
 });
-
-var formcheckbox = document.getElementById("replytocheckbox");
-var checkboxpoint = document.getElementById("checkboxpoint")
-var checkedValue = $('#replytocheckbox:checked').val();
-
-$(function() {
-    if(formcheckbox.checked == true) {
-        checkboxpoint.val("true")
-    } else {
-        checkboxpoint.val("false")
-    }
-})

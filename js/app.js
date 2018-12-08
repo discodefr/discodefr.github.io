@@ -22,3 +22,8 @@ $(function () {
         }, 4000);
     });
 });
+
+var cb = document.getElementById('replytocheckbox');
+$(function () {
+    cb.onclick =  cb.value = this.checked
+})

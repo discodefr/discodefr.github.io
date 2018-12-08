@@ -96,15 +96,17 @@
 						<label for="email" style="float: left;">E-Mail</label>
 						<input type="email" id="email" class="form-control" name="email" required>
 					</div><br>
+
 					<legend style="font-size: 20px;">Votre Message</legend>
+
 					<div class="md-form">
 						<label for="message" style="float: left;">Message</label>
 						<textarea id="message" name="message" class="form-control md-textarea" rows="5" required></textarea><br>
 					</div>
 
-					<div class="custom-control custom-checkbox" style="float: left;">
-						<input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter" value="replyToEmail">
-						<label class="custom-control-label" for="defaultRegisterFormNewsletter">M'envoyer une copie de mes réponses par e-mail (En développement, ne marche pas)</label>
+					<div class="custom-control custom-checkbox md-form" style="float: left;">
+						<label for="replytocheckbox" class="custom-control-label">M'envoyer une copie de mes réponses par e-mail</label>
+						<input type="checkbox" class="custom-control-input form-control" id="replytocheckbox" value="replyToEmail" name="replyToRequest?">
 					</div>
 
 					<br><br><div id="recaptcha" class="g-recaptcha" data-sitekey="6LfKx3kUAAAAAMSkxx6QSX8fP9FILrFZNErhJrUT" data-callback="recaptcha_callback"></div><br>

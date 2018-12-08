@@ -25,11 +25,12 @@ $(function () {
 
 var formcheckbox = document.getElementById("replytocheckbox");
 var checkboxpoint = document.getElementById("checkboxpoint")
+var checkedValue = $('#replytocheckbox:checked').val();
 
 $(function() {
     if(formcheckbox.checked == true) {
-        checkboxpoint.innerHTML('<input type="checkbox" class="custom-control-input" id="replytocheckbox" value="false" name="replyToRequest?">')
+        checkboxpoint.val("true")
     } else {
-        checkboxpoint.innerHTML('<input type="checkbox" class="custom-control-input" id="replytocheckbox" value="true" name="replyToRequest?">')
+        checkboxpoint.val("false")
     }
 })
